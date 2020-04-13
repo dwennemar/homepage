@@ -1,0 +1,24 @@
+.social-icons {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+  color: #fff;
+  background-color: #444;
+  font-family: "Bitstream Vera Sans", "Roboto Light", sans-serif;
+
+  div {
+    place-self: center;
+    span {
+      padding: 5pt;
+      border-radius: 10pt;
+    }
+  }
+}
+
+.social-icons span:hover {
+  color: #444;
+  background-color: #dcdcdc;
+  cursor: pointer;
+}
