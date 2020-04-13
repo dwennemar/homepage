@@ -1,38 +1,39 @@
-.landing-component {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: #4d92d5;
-  color: #fff;
 
-  .landing-content {
+.landing {
+
+  .landing-header {
+    position: absolute;
+    z-index: 2;
+    width: 99%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    img {
-      height: 6rem;
-      width: 6rem;
-      border-radius: 50%;
-      margin: 1rem;
-      box-shadow: gray;
-      background-repeat: no-repeat;
-      background-clip: content-box;
-    }
-    .profile-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-size: xx-large;
-      font-family: "Bitstream Vera Sans", "Roboto Light", sans-serif;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #fff;
+    font-family: "Bitstream Vera Sans", "Roboto Light", sans-serif;
 
-      .carousel-text {
-        white-space: nowrap;
-        overflow: hidden;
-      }
-
+    span {
+      font-size: small;
+      border: 2pt solid #fff;
+      padding: 4pt;
+      border-radius: 1rem;
+      margin: 8pt;
     }
   }
+
+  .landing-header span:hover {
+    cursor: pointer;
+  }
+
+  app-info-card {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+    background-color: #4d92d5;
+    color: #fff;
+  }
 }
+
 

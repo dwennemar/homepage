@@ -1,12 +1,9 @@
-<div class="landing-component">
-  <div class="landing-content">
-    <img class="img" src="assets/profile.jpg" alt="Profile">
-    <div class="profile-text">
-      <span>
-        Daniel Wennemar
-      </span>
-      <span class="carousel-text"><fa-icon [icon]="txt.icon"></fa-icon>&thinsp;{{txt.name}}</span>
+<div class="container">
+  <div class="landing">
+    <div class="landing-header">
+      <span (click)="onClick('contact')">Contact</span>
     </div>
+    <app-info-card></app-info-card>
   </div>
+  <app-contact id="contact"></app-contact>
 </div>
-

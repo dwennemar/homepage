@@ -1,0 +1,37 @@
+.info-card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  .img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: 1rem;
+    box-shadow: gray;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+  }
+
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: "Bitstream Vera Sans", "Roboto Light", sans-serif;
+
+    .carousel-text {
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .info-card-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
