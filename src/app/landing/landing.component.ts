@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {interval} from 'rxjs';
+import {faAngular, faJava} from '@fortawesome/free-brands-svg-icons';
+import {faFire, faLeaf, faPaintBrush} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-landing',
@@ -7,7 +9,13 @@ import {interval} from 'rxjs';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  skillSet = ['Angular', 'Java', 'UI-Design'];
+  skillSet = [
+    {name: 'Angular', icon:  faAngular},
+    {name: 'Firebase', icon: faFire},
+    {name: 'Java', icon: faJava},
+    {name: 'Spring', icon: faLeaf},
+    {name: 'UI-Design', icon: faPaintBrush}
+  ];
   txt = this.skillSet[0];
   skillIndex = 0;
 
@@ -19,7 +27,7 @@ export class LandingComponent implements OnInit {
   }
 
   switchTxt() {
-    interval(1600).subscribe((val) => {
+    interval(2000).subscribe((val) => {
       if(this.skillIndex >= this.skillSet.length) {
         this.skillIndex = 0;
       }
