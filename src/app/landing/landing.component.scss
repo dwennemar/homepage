@@ -1,0 +1,38 @@
+.landing-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #4d92d5;
+  color: #fff;
+
+  .landing-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 70%;
+    img {
+      height: 6rem;
+      width: 6rem;
+      border-radius: 50%;
+      margin: 1rem;
+      background-repeat: no-repeat;
+      background-clip: content-box;
+    }
+    .profile-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: xx-large;
+      font-family: "Bitstream Vera Sans", "Roboto Light", sans-serif;
+
+      .carousel-text {
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+    }
+  }
+}
+
