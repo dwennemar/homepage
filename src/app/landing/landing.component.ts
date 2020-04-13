@@ -7,7 +7,7 @@ import {interval} from 'rxjs';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  skillSet = ['Angular-Development', 'Java-Development', 'UI-Design'];
+  skillSet = ['Angular', 'Java', 'UI-Design'];
   txt = this.skillSet[0];
   skillIndex = 0;
 
