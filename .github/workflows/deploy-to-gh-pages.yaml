@@ -14,11 +14,14 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 8.15.1
+      - name: Build
+        run: |
+          npm install
+          npm run-script build -- --prod
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
-        env:
+        with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BASE_BRANCH: master
           BRANCH: gh-pages
           FOLDER: dist/homepage
-          BUILD_SCRIPT: npm install && npm run-script build -- --prod
