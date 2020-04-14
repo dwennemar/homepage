@@ -7,6 +7,8 @@ import { LandingComponent } from './landing/landing.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './contact/contact.component';
 import { InfoCardComponent } from './info-card/info-card.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { DataPrivacyComponent } from './data-privacy/data-privacy.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { InfoCardComponent } from './info-card/info-card.component';
     LandingComponent,
     ContactComponent,
     InfoCardComponent,
+    LegalNoticeComponent,
+    DataPrivacyComponent,
   ],
   imports: [
     BrowserModule,

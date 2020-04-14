@@ -36,4 +36,19 @@
   }
 }
 
+.legal-links {
+  width: auto;
+  z-index: 2;
+  padding: 1rem;
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  span {
+    font-family: "Bitstream Vera Sans", "Roboto Light", sans-serif;
+    color: #fff;
+    cursor: pointer;
+  }
+}
