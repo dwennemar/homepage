@@ -10,14 +10,16 @@
 
   div {
     place-self: center;
-    span {
+    a {
+      color: #fff;
+      text-decoration: none;
       padding: 5pt;
       border-radius: 10pt;
     }
   }
 }
 
-.social-icons span:hover {
+.social-icons div a:hover {
   color: #444;
   background-color: #dcdcdc;
   cursor: pointer;
