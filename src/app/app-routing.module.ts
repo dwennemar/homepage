@@ -12,7 +12,10 @@ const routes: Routes = [
       component: LegalNoticeComponent
     }]
   },
-  { path: '**', redirectTo: '' }
+  {
+    path: '**',
+    redirectTo: ''
+  }
 ];
 
 @NgModule({
